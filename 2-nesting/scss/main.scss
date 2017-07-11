@@ -1,0 +1,27 @@
+@import "variables";
+
+.alert {
+
+	$highlighted-inner-color: darken(orange, 10%);
+	$regular-inner-color: darken(blue, 20%);
+
+	padding: $alert-padding;
+	margin-bottom: 20px;
+	border-radius: $alert-border-radius;
+	border: 1px solid $highlighted-inner-color;
+
+	> a {
+		color: $highlighted-inner-color;
+
+		&.alert-link {
+			color: $regular-inner-color;
+		}
+	}
+}
+
+.b-button {
+	// This is not going to work.
+	// Because the variable $highlighted-inner-color is NOT available in this scope!
+
+	// color: $highlighted-inner-color;
+}
