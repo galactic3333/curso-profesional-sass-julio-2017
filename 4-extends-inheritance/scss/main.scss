@@ -1,0 +1,19 @@
+@import "variables";
+
+.alert {
+	padding: $alert-padding;
+	margin-bottom: 20px;
+	border-radius: $alert-border-radius;
+}
+
+.alert-danger {
+	@extend .alert;
+	color: $alert-danger-text;
+	background-color: $alert-danger-border;
+}
+
+.alert-info {
+	@extend .alert;
+	color: $alert-info-text;
+	background-color: $alert-info-border;
+}
