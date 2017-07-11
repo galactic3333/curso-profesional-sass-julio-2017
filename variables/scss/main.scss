@@ -1,0 +1,15 @@
+@import "variables";
+
+h1 {
+	color: $brand-primary;
+}
+
+h2 {
+	color: $brand-success;
+}
+
+p {
+	border: $border-size solid $brand-info;
+	color: $brand-info;
+	padding: $border-size * 4;
+}
