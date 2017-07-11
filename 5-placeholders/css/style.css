@@ -1,0 +1,14 @@
+.alert-danger, .alert-info {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px; }
+
+.alert-danger {
+  color: #a94442;
+  background-color: #ebccd1; }
+
+.alert-info {
+  color: #31708f;
+  background-color: #bce8f1; }
+
+/*# sourceMappingURL=style.css.map */
