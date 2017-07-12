@@ -1,5 +1,9 @@
 @import "variables";
 
+%alert-special {
+	background-color: $alert-info-bg;
+}
+
 %alert {
 	padding: $alert-padding;
 	margin-bottom: 20px;
@@ -17,4 +21,3 @@
 	color: $alert-info-text;
 	background-color: $alert-info-border;
 }
-

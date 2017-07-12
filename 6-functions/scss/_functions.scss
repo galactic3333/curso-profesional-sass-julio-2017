@@ -1,0 +1,3 @@
+@function calc-column-width($number-of-desired-columns, $grid-columns: 12) {
+	@return ( percentage(1 / $grid-columns) * $number-of-desired-columns );
+}

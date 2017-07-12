@@ -1,0 +1,18 @@
+@import "functions";
+@import "mixins";
+
+.col-1 {
+	@include column();
+	width: calc-column-width(1); // 3-columns width
+}
+
+.col-3 {
+	@include column();
+	width: calc-column-width(3); // 3-columns width
+}
+
+.col-6 {
+	@include column();
+	width: calc-column-width(6); // 6-columns width
+}
+

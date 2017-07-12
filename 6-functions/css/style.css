@@ -1,0 +1,19 @@
+.col-1 {
+  float: left;
+  width: 8.33333%; }
+
+.col-3 {
+  float: left;
+  width: 25%; }
+
+.col-6 {
+  float: left;
+  width: 50%; }
+
+.b-columns-content {
+  border: 1px solid #efefef;
+  background-color: white;
+  min-height: 300px;
+  padding: 20px; }
+
+/*# sourceMappingURL=style.css.map */
