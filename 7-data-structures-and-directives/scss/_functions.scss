@@ -1,0 +1,37 @@
+@function calc-column-width($number-of-desired-columns, $grid-columns: 12) {
+	@return (percentage(1 / $grid-columns) * $number-of-desired-columns);
+}
+
+// Example of map (data structure)s
+@function get-color-from-map($color-name) {
+
+	// Map of colors
+	$colors: (
+		venus: #FA6ACC,
+		mars: #F02A52,
+		earth: #09A6E4
+	);
+
+	@if (map-has_key($colors, $color-name)) {
+		@return map-get($colors, $color-name);
+	}
+
+	@warn "Color `#{$color-name}` not found in $colors.";
+	@return null;
+}
+
+@function create-margin-variation($size) {
+	$base-margin-size: 40px;
+
+	$margins-by-size-map: (
+		xs : $base-margin-size / 4,
+		sm : $base-margin-size / 2,
+		md : $base-margin-size,
+		lg : $base-margin-size * 1.5
+	);
+
+	@if (map-has_key($margins-by-size-map, $size)) {
+		@return map-get($margins-by-size-map, $size);
+	}
+	@return $base-margin-size;
+}

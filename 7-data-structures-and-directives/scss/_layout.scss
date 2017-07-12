@@ -1,3 +1,4 @@
+@import "variables";
 @import "functions";
 @import "mixins";
 
@@ -17,3 +18,7 @@
 	width: calc-column-width(6); // 6-columns width
 }
 
+// Dynamic generation :)
+@include create-columns($grid-columns);
+
+@include create-margin-classes();

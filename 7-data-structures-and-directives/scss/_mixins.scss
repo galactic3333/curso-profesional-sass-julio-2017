@@ -1,0 +1,33 @@
+@import "functions";
+
+@mixin column() {
+	float: left;
+}
+
+@mixin create-columns($grid-columns) {
+	// Automatic generation
+	// Flow control by using @for
+	@for $i from 1 through $grid-columns {
+		.col-#{$i} {
+			@include column();
+			width: calc-column-width($i, $grid-columns);
+		}
+	}
+}
+
+@mixin create-margin-classes() {
+	$sizes: 'xs' 'sm' 'md' 'lg';
+	$types: 'all' 'top' 'bottom' 'left' 'right';
+
+	@each $size in $sizes {
+		@each $type in $types {
+			.margin-#{$type}-#{$size} {
+				@if ($type == 'all') {
+					margin: create-margin-variation($size);
+				} @else {
+					margin-#{$type}: create-margin-variation($size);
+				}
+			}
+		}
+	}
+}

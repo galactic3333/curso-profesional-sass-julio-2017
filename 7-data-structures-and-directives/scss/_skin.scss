@@ -1,0 +1,19 @@
+@import "functions";
+
+.b-columns-content {
+	border: 1px solid #efefef;
+	background-color: white;
+	min-height: 300px;
+	padding: 20px;
+}
+
+h1 {
+	line-height: 1.5em;
+	color: get-color-from-map('mars');
+}
+
+h2 {
+	line-height: 1.0em;
+	color: get-color-from-map('earth');
+	content : "#{get-color-from-map('earths')}";
+}
