@@ -1,0 +1,11 @@
+@import "variables";
+a {
+	color: $links-color;
+
+	&:hover {
+		color: darken($links-color, 10%);
+	}
+}
+body {
+	background: $bg-color;
+}

@@ -1,0 +1,82 @@
+@import "../../../global/variables";
+
+.product {
+
+	min-width: 120px;
+	max-width: 180px;
+	width: auto;
+	border: 2px solid #444;
+	overflow: hidden;
+	background: white;
+
+	&__thumbnail {
+		margin: 0;
+
+		img {
+			height: 180px;
+			min-width: 120px;
+			box-shadow: none;
+		}
+
+	}
+
+	&__information {
+
+	}
+
+	&__title {
+		padding: 0 10px;
+		margin: 5px 0 10px 0;
+		font-size: 14px;
+		line-height: 1.5em;
+	}
+
+	&__actions {
+		list-style: none;
+		margin: 20px 0 0 0;
+		padding: 0 10px;
+		text-align: center;
+
+		&-item {
+			display: inline-block;
+			margin-right: 1em;
+			min-height: 30px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__icon {
+		color: $border-color;
+
+		&--highlighted {
+			color: $links-color;
+		}
+	}
+
+	&__icon-info {
+
+	}
+
+	&__icon-play {
+
+	}
+
+	&__icon-queue {
+
+	}
+
+	&__icon-video {
+		margin-left: 10px;
+		margin-top: 10px;
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+
+	&__icon-video-label {
+		padding-left: 5px;
+	}
+
+}
