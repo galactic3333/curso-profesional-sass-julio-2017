@@ -1,0 +1,63 @@
+// Block
+.b-case-study {
+	border: 4px solid green;
+	background-color: white;
+	min-height: 300px;
+	max-width: 220px;
+	overflow: hidden;
+
+	&__information {
+		padding: 10px;
+	}
+
+	// Elements
+	&__thumbnail {
+
+	}
+
+	&__title {
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+
+	&__type {
+
+	}
+
+	&__actions {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+
+	&__icon {
+		color: black;
+
+		&:hover {
+			color: orange;
+		}
+
+		&--highlighted {
+			color: orange;
+		}
+	}
+
+	&__icon-item {
+		display: inline-block;
+		margin: 0 5px;
+	}
+
+	&__icon-info {
+
+	}
+
+	&__icon-watch {
+
+	}
+
+	&__icon-queue {
+
+	}
+
+}
